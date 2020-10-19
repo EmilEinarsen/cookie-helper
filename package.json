@@ -1,0 +1,25 @@
+{
+  "name": "bjork_cookie",
+  "version": "1.0.0",
+  "description": "A collection for managing cookies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmilEinarsen/bjork_cookie.git"
+  },
+  "keywords": [
+    "Cookie"
+  ],
+  "author": "Emil O. Einarsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EmilEinarsen/bjork_cookie/issues"
+  },
+  "homepage": "https://github.com/EmilEinarsen/bjork_cookie#readme",
+  "devDependencies": {
+    "jest": "^26.6.0"
+  }
+}
