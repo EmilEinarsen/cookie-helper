@@ -1,40 +1,42 @@
 const isBrowser = typeof window !== 'undefined'
 
-cookie = () => ({
+const cookie = {
 
-	destroy: key => this.set(key,"",{days: -1}),
+	destroy: key => cookie.set(key,"",{days: -1}),
 
-	check: key => this.get(key) ? true : false,
+	check: key => cookie.get(key) ? true : false,
 
-	set: (key, value, options = { days: 7, path: '/', ...options }) => {
+	set: (key, value, options = {}) => {
 		if(!isBrowser) return
-
+		const { 
+			days = 7, 
+			path = '/'
+		} = options
 		const DayInSec = 864e5
 		const expires = new Date(
-			Data.now() + days * DayInSec
+			Date.now() + days * DayInSec
 		).toUTCString()
 
 		document.cookie =
 			key +
 			'=' +
-			value +
+			encodeURIComponent(value) +
+			'; expires=' +
 			expires +
 			'; path=' +
 			path
 	},
 
-	get: (key, initialValue) => {
-		return (
-			(isBrowser &&
-				document.cookie
-				.split('; ')
-				.reduce((r, v) => {
-					const parts = v.split('=')
-					return parts[0] === key ? decodeURIComponent(parts[1]) : r
-				})
-			) || initialValue
-		)
-	}
-})
+	get: (key, initialValue) => (
+		(isBrowser &&
+			document.cookie
+			.split('; ')
+			.reduce((r, v) => {
+				const parts = v.split('=')
+				return parts[0] === key ? decodeURIComponent(parts[1]) : r
+			}, '')
+		) || initialValue
+	)
+}
 
 module.exports = cookie
