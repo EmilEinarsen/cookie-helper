@@ -1,6 +1,6 @@
 {
   "name": "bjork_cookie",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A collection for managing cookies",
   "main": "index.js",
   "scripts": {
@@ -18,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/EmilEinarsen/bjork_cookie/issues"
   },
-  "homepage": "https://github.com/EmilEinarsen/bjork_cookie#readme",
-  "devDependencies": {
-    "jest": "^26.6.0"
-  }
+  "homepage": "https://github.com/EmilEinarsen/bjork_cookie#readme"
 }
