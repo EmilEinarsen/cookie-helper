@@ -1,6 +1,6 @@
 {
   "name": "bjork_cookie",
-  "version": "1.1.0",
+  "version": "1.2.2",
   "description": "A collection for managing cookies",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,12 @@
     "url": "git+https://github.com/EmilEinarsen/bjork_cookie.git"
   },
   "keywords": [
-    "Cookie"
+	"Cookie",
+	"Cookies",
+	"getCookie",
+	"setCookie",
+	"checkCookie",
+	"destroyCookie"
   ],
   "author": "Emil O. Einarsen",
   "license": "MIT",
