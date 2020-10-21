@@ -49,7 +49,7 @@ const cookie = {
 	 * Fetches cookie by key and extracts value
 	 * @function get
 	 * @param {String} key - Id/key of the cookie
-	 * @param {*} initialValue - Value to be returned if no cookie were found
+	 * @param {*} [initialValue] - Value to be returned if no cookie were found
 	 * @return value | _initalValue_
 	 */
 	get: (key, initialValue) => (

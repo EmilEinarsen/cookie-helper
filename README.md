@@ -20,7 +20,7 @@ Use npm to install bjork_cookies or copy the code manualy form [github]:https://
 > cookie.check(key)
 ```
 ### Set
-Packages and sets a cookie according to params. Takes three parameters, _key_ (string), _value_ (\*) and _options_ (object).
+Packages and sets a cookie according to params. Takes three parameters, _key_ (string), _value_ (\*) and the optional _options_ (object).
 
 > **Options**
 > * _days_ (number):
@@ -30,7 +30,7 @@ Indicates a URL path. (@default '/')
 
 ### Get
 Fetches cookie by key and extracts value.
-Takes two parameters, _key_ (string) and _initalValue_. Returns value | _initalValue_.
+Takes two parameters, _key_ (string) and the  optional _initalValue_. Returns value | _initalValue_.
 
 ### Check
 Checks if a cookie by the given key exists. Takes one param, _key_. Returns _Boolean_. 
