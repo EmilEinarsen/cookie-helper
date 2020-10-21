@@ -4,12 +4,10 @@ An object containing four methods for managing cookies. The main methods set and
 
 
 ## Install
-Use npm to install bjork_cookies or copy the code manualy form [github](https://github.com/EmilEinarsen/bjork_cookie).
-
+Use npm to install bjork_cookies or copy the code manually form [github](https://github.com/EmilEinarsen/bjork_cookie).
 ```bash
 > npm i bjork_cookies
 ```
-
 ## Usage
 ```js
 > const cookie = require('bjork_cookies')
