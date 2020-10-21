@@ -4,7 +4,7 @@ An object containing four methods for managing cookies. The main methods set and
 
 
 ## Install
-Use npm to install bjork_cookies or copy the code manually form [github](https://github.com/EmilEinarsen/bjork_cookie).
+Use npm to install bjork_cookies or copy the code manually from [github](https://github.com/EmilEinarsen/bjork_cookie).
 ```bash
 > npm i bjork_cookies
 ```
@@ -28,7 +28,7 @@ Indicates a URL path. (@default '/')
 
 ### Get
 Fetches cookie by key and extracts value.
-Takes two parameters, _key_ (string) and the  optional _initalValue_. Returns value | _initalValue_.
+Takes two parameters, _key_ (string) and the optional _initalValue_. Returns value | _initalValue_.
 
 ### Check
 Checks if a cookie by the given key exists. Takes one param, _key_. Returns _Boolean_. 
@@ -36,7 +36,7 @@ Utilizes _get_.
 
 ### Destroy
 Destroys a cookie by overwriting it. Takes one param, _key_.
-Utilizes _set_ and a expiration date of yesterday.
+Utilizes _set_ and an expiration date of yesterday.
 
 ## Contribution
 Pull requests are welcome. For any considerable changes, please open an issue first to discuss what you would like to change.<br>
